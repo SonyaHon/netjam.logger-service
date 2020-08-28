@@ -1,0 +1,34 @@
+{
+  "name": "netjam.logger-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start-dev": "NJ_HOST=0.0.0.0 NJ_PORT=9092 NJ_SERVICE_NAME=logger-service NJ_REDIS_HOST=localhost NJ_REDIST_PORT=6379 ts-node ./src/index.ts",
+    "debug": "nodemon"
+  },
+  "dependencies": {
+    "@netjam/server": "latest"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "3.10.1",
+    "@types/node": "12.12.2",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "nodemon": "2.0.4",
+    "prettier": "2.0.5",
+    "ts-node": "9.0.0",
+    "typescript": "4.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
